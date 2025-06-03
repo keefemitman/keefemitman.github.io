@@ -112,7 +112,7 @@ analytics:
 # Site Author
 author:
   name             : "Keefe Mitman"
-  avatar           : "/assets/images/keefe-mitman.jpg"
+  avatar           : "keefe-mitman.jpg"
   bio              : "NASA Einstein Fellow,<br>Cornell University,<br>Visitor at the Flatiron Institute's CCA,<br>Visitor at Princeton University,<br><br>Interests:<br>General relativity, black holes,<br>gravitational waves,<br>numerical relativity,<br>and more!"
   location         : "Ithaca, NY"
   email            : "kem343@cornell.edu"
