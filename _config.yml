@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Keefe E. A. Mitman"
+title                    : "Keefe Mitman"
 title_separator          : "-"
 name                     : "Keefe Mitman"
 description              : "NASA Einstein Fellow @ Cornell University, Visitor at Flatiron Institute CCA, Visitor at Princeton University, general relativity, black holes, gravitational waves, numerical relativity"
@@ -112,7 +112,7 @@ analytics:
 # Site Author
 author:
   name             : "Keefe Mitman"
-  avatar           : "keefe-mitman.jpg"
+  avatar           : "/assets/images/keefe-mitman.jpg"
   bio              : "NASA Einstein Fellow,<br>Cornell University,<br>Visitor at the Flatiron Institute's CCA,<br>Visitor at Princeton University,<br><br>Interests:<br>general relativity, black holes,<br>gravitational waves,<br>numerical relativity,<br>and more!"
   location         : "Ithaca, NY"
   email            : "kem343@cornell.edu"
