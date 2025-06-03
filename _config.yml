@@ -16,15 +16,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Keefe E. A. Mitman"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Keefe Mitman"
+description              : "NASA Einstein Fellow @ Cornell University, Visitor at the Flatiron Institute's CCA, Visitor at Princeton University, general relativity, black holes, gravitational waves, numerical relativity"
+url                      : "https://https://keefemitman.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "keefemitman/keefemitman.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -113,30 +111,25 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Keefe Mitman"
+  avatar           : "images/keefe-mitman.png"
+  bio              : "NASA Einstein Fellow,<br>Cornell University,<br>Visitor at the Flatiron Institute's CCA,<br>Visitor at Princeton University,<br>general relativity, black holes,<br>gravitational waves,<br>numerical relativity,<br>and more!"
+  location         : "Ithaca, NY"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:kem343@cornell.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://keefemitman.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/keefemitman"
+  arxiv            : ""
+  orcid            : "0000-0003-0276-3856"
+  inspire          : "1841017"
+  google-scholar   : "647nd8cAAAAJ"
 
 # Site Footer
 footer:
@@ -149,7 +142,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/keefemitman"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
