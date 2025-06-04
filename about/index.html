@@ -1,0 +1,12 @@
+---
+layout: single
+classes: wide
+author_profile: true
+---
+
+<div class="about-content">
+  {% capture about_md %}
+    {% include about_content.md %}
+  {% endcapture %}
+  {{ about_md | markdownify }}
+</div>
