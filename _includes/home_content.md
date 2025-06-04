@@ -1,6 +1,6 @@
 # Welcome to my website!
 
-I am a NASA Einstein Fellow at Cornell University
+I'm a NASA Einstein Fellow at Cornell University
 studying the nature of gravity within our Universe.
 One of the big questions of modern physics is whether
 Einstein's equations wholly describe gravity, or if they

@@ -1,0 +1,12 @@
+---
+layout: single
+classes: wide
+author_profile: true
+---
+
+<div class="teaching-content">
+  {% capture teaching_md %}
+    {% include teaching_content.md %}
+  {% endcapture %}
+  {{ teaching_md | markdownify }}
+</div>

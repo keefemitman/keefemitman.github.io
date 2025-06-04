@@ -1,0 +1,12 @@
+---
+layout: single
+classes: wide
+author_profile: true
+---
+
+<div class="research-content">
+  {% capture research_md %}
+    {% include research_content.md %}
+  {% endcapture %}
+  {{ research_md | markdownify }}
+</div>
