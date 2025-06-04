@@ -1,7 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 search: false
----
+---	
 
 @charset "utf-8";
 
@@ -16,3 +16,9 @@ search: false
 @import "notices";
 
 @import "sidebar";
+
+.greedy-nav__toggle .navicon,
+.greedy-nav__toggle .navicon::before,
+.greedy-nav__toggle .navicon::after {
+    background: #000 !important;
+}
