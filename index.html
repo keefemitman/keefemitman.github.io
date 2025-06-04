@@ -6,3 +6,10 @@ header:
   overlay_image: /assets/images/starry-night.jpg
   overlay_filter: 0.3
 ---
+
+<div class="homepage-content">
+  {% capture home_md %}
+    {% include home_content.md %}
+  {% endcapture %}
+  {{ home_md | markdownify }}
+</div>

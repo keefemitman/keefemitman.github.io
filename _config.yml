@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Keefe Mitman"
 title_separator          : "-"
 name                     : "Keefe Mitman"
-description              : "NASA Einstein Fellow @ Cornell University, Visitor at Flatiron Institute CCA, Visitor at Princeton University, general relativity, black holes, gravitational waves, numerical relativity"
+description              : "NASA Einstein Fellow @ Cornell University"
 url                      : "https://keefemitman.github.io"
 baseurl                  : # ""
 repository               : "keefemitman/keefemitman.github.io"
@@ -113,7 +113,7 @@ analytics:
 author:
   name             : "Keefe Mitman"
   avatar           : "keefe-mitman.jpg"
-  bio              : "NASA Einstein Fellow,<br>Cornell University,<br>Visitor at the Flatiron Institute's CCA,<br>Visitor at Princeton University,<br><br>Interests:<br>General relativity, black holes,<br>gravitational waves,<br>numerical relativity,<br>and more!"
+  bio              : "NASA Einstein Fellow<br>@ Cornell University,<br>Visitor at the CCA<br>at the Flatiron Institute,<br>Visitor at Princeton,<br><br>Interests:<br>General relativity,<br>black holes,<br>gravitational waves,<br>numerical relativity,<br>and more!"
   location         : "Ithaca, NY"
   email            : "kem343@cornell.edu"
   github           : "keefemitman"
@@ -292,12 +292,10 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
-
-# Defaults
+      
 defaults:
   # _posts
-  - scope:
+  - scope:	
       path: ""
       type: posts
     values:
