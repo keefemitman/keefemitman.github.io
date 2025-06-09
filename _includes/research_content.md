@@ -43,7 +43,9 @@ then evolving this initial data becomes a well-posed problem (i.e., a solution w
 While this grossly oversimplifies the amount of work required to run a successful numerical relativity simulation, this is the main gist.
 And at the end of the day, if the code is written correctly, you can obtain some pretty remarkable simulations like this:
 
-![](/assets/images/simulation.mp4)
+<video width="640" height="360" controls>
+  <source src="/assets/images/simulation.mp4" type="video/mp4">
+</video>
 
 In the above simulation, color represents the lapse $\alpha$, which effectively describes how slow time flows due to the spacetime's curvature.
 At the bottom there's also a waveform representing the emitted gravitational wave, which is what we actually observe! But how do we compute that?
@@ -80,7 +82,7 @@ Cauchy (i.e., space-like) slices, i.e., the blue foliations shown on the right. 
 redifining one's coordinates so that instead of working with $r\in[r_{\mathrm{worldtube}},\infty]$ one works with finite coordinates, say,
 $y\equiv1-\frac{2r_{\mathrm{worldtube}}}{r}\in[-1,1]$.
 
-<img align="right" src="/assets/images/CCE_cartoon.pdf" alt="drawing" width="200"/>
+<img align="right" src="/assets/images/CCE_cartoon.png" alt="drawing" width="200"/>
 
 This evolution is called Cauchy-characteristic evolution (CCE), and instead evolves Einstein's equations on null slices (rather than Cauchy slices).
 Furthermore, because the radial coordinate is compactified, future null infinity is included on the computational grid so one can
