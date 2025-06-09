@@ -29,9 +29,9 @@ And to do so, we need the help of supercomputers and *numerical relativity*.
 With the [Simulating eXtreme Spacetimes (SXS) Collaboration](https://www.black-holes.org) I run these simulations and
 build models of the gravitational waves that are emitted by
 black hole coalescences, to help aid with this project
-of putting Einstein's equations to the test!
+of putting Einstein's equations to the test.
 
 
 While there's too much that intrigues me to describe here,
 this is my main research interest. But for even more details,
-please check out my [research page!](/research)
+please check out my [research page](/research).
