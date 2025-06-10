@@ -22,6 +22,7 @@ li.custom-bullet {
 
 <ul class='no-bullet'>
   <li class='custom-bullet'><a href="#numerical-relativity">Numerical relativity</a></li>
+  <li class='custom-bullet'><a href="#gravitational-wave-memory">Gravitational wave memory</a></li>
   <li class='custom-bullet'><a href="#gravitational-wave-coordinate-freedoms-the-bms-group">Gravitational wave coordinate freedoms: the BMS group</a></li>
   <li class='custom-bullet'><a href="#gravitational-wave-hybridizations">Gravitational wave hybridizations</a></li>
   <li class='custom-bullet'><a href="#gravitational-wave-surrogate-models">Gravitational wave surrogate models</a></li>
@@ -101,9 +102,26 @@ Image Credit:
 
 ---
 
-## Gravitational memory
+## Gravitational wave memory
 
-In developement
+<img align="right" src="/assets/images/memory.gif" alt="drawing" width="200"/>
+
+Above we saw that unlike what's commonly presented in the literature, gravitational waves typically do not decay to zero at late times!
+
+
+
+This phenomenon is known as the *gravitational wave memory effect* and corresponds to the fact that two freely-falling observers
+will experience a net displacement relative to each other due to a gravitational wave passing through the spacetime between them.
+This is illustrated through the gif shown on the right. While time progresses, the spacetime between the observers (the points) oscillates
+with the peaks and the troughs of the gravitational wave. But, since the gravitational wave does not decay to zero at late times
+(due to the memory effect) the observers remain permanently displaced relative to their initial circular configuration!
+While this effect has yet to be observed, we can resolve it in numerical relativity simulations. And, in the next five-ish years,
+we expect to be able to claim a detection within the population of events observed by the LVK collaboration.
+
+
+
+What makes this effect particularly interesting though, apart from its mind-wrenching nature, is that it turns out to be intimately
+connected to the symmetries of spacetime and maybe even the tools required for constructing a theory of quantum gravity.
 
 ---
 
