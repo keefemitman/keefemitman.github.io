@@ -118,16 +118,39 @@ with the peaks and the troughs of the gravitational wave. But, since the gravita
 While this effect has yet to be observed, we can resolve it in numerical relativity simulations. And, in the next five-ish years,
 we expect to be able to claim a detection within the population of events observed by the LVK collaboration.
 
-
-
-What makes this effect particularly interesting though, apart from its mind-wrenching nature, is that it turns out to be intimately
-connected to the symmetries of spacetime and maybe even the tools required for constructing a theory of quantum gravity.
+To do so, however, necessitates that one can separate out the memory contribution to the gravitational wave strain from the
+usual oscillatory contribution. So, in [arXiv:2007.11562](https://arxiv.org/abs/2007.11562) and [arXiv:2011.01309](https://arxiv.org/abs/2011.01309)
+(or see [arXiv:2405.08868](https://arxiv.org/abs/2405.08868) for a review)
+we showed exactly how to do this with numerical relativity simulations! It turns out that because memory is
+intimately related to the symmetries of asymptotic infinity
+(see [Gravitational wave coordinate freedoms: the BMS group](#gravitational-wave-coordinate-freedoms-the-bms-group))
+one can utilizes Noether's theorem to construct balance laws which naturally decompose the strain into a
+component which looks like the usual oscillatory contribution and a component which looks like the step-like memory contribution.
+Consequently, understanding whether or not we've observed memory in a gravitatianal wave observation is trivial
+(provided that we can observe a binary black hole coalescence with a high enough signal-to-noise ratio!)
 
 ---
 
 ## Gravitational wave coordinate freedoms: the BMS group
 
-In developement
+In [Numerical Relativity](#numerical-relativity) we explained why it is much easier to study gravitational radiation from
+gravitational systems at future null infinity. In particular, the added structure of the boundary of asymptotically flat spacetimes
+makes it so that the coordinate freedoms one must control are not abitrary diffeomorphisms, but rather a more restricted set of symmetries.
+While one may naively expect the symmetries of future null infinity to simply be the 10 Poincar&eacute; symmetries---four spacetime translations,
+three Lorentz rotations, and three Lorentz boosts---it turns out that there is actually an infinite number of symmetries,
+which are contained in a particular extension of the Poincar&eacute; group known as the *BMS group*, named after
+Bondi, van der Burg, Metzner, and Sachs.
+
+These additional symmetries of the BMS group come from the fact that future null infinity is built from an infinite number of null generators:
+one for each point on the celestial two-sphere (mathematicall we have $I^{+}\cong\mathbb{R}\times S^{2}$). Physically, a way to think of this is the following.
+Imagine you have a group of observers watching some event, say a supernovae. If these observers know their relative positions, then they can change
+their personal clocks so that they all receive the same spherically-symmetric information at the same time. However, if you push these observers to
+asymptotic infinity, then they become causally disconnected from one another, so there is no way for them to synchronize their personal clocks to begin with,
+meaning these "direction-dependent" time translations, a.k.a., "supertranslations", are a symmetry of the system.
+
+Consequently, whenever one computes a gravitational wavefrom at future null infinity, it is subject to the infinite number of BMS freedoms,
+which must be controlled in some well-defined manner! Across [arXiv:2105.02300](https://arxiv.org/abs/2105.02300) and [arXiv:2208.04356](https://arxiv.org/abs/2208.04356) (with a review in [arXiv:2405.08868](https://arxiv.org/abs/2405.08868)), we describe exactly how this can be done to compare NR waveforms from different resolutions,
+or NR waveform to other waveform approximants, like post-Newtonian waveforms! (see below!)
 
 ---
 
