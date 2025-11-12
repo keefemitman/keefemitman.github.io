@@ -56,7 +56,7 @@ that you're using. And this is part of what makes numerical relativity so challe
 This is the general *diffeomorphism invariance* of general relativity. As a result, we can't simply provide the LIGO-Virgo-KAGRA Collaboration with
 the spacetime metric on some worldline in our simulation because it would be highly dependent on the arbitrary coordinate system we chose.
 Instead, we need a way to limit how much we need to worry about coordinates. One way to do this is to look to some region of spacetime that has
-some kind of structure that we cannot simply change arbitrary. But where to look? If we assume that the spacetime we're simulating is *asymptotically flat*, i.e.,
+some kind of structure that we cannot simply change arbitrarily. But where to look? If we assume that the spacetime we're simulating is *asymptotically flat*, i.e.,
 that it has zero curvature infinitely far away from the origin, then we've naturally focused in on a region of spacetime with structure! While this boundary
 of spacetime can be partitioned into components, the one we will be interested in is called *future null infinity*---the final destination of
 outgoing null (i.e., light-like) radiation such as gravitational waves. Future null infinity, or $\mathcal{I}^{+}$ for short, has a particular structure
@@ -78,9 +78,9 @@ So if we want to compute the gravitational wave in our simulations, then we simp
 
 In practice this works via the following. First, solve Einstein's equations for a gravitational system in 3+1 form on a series of
 Cauchy (i.e., space-like) slices, i.e., the blue foliations shown on the right. Then, at some radius, write the metric
-(and it's derivatives) to file to produce a "worldtube" of metric data. Once this evolution is finished, one can then proceed to do a
+(and its derivatives) to file to produce a "worldtube" of metric data. Once this evolution is finished, one can then proceed to do a
 *second* evolution that includes future null infinity on the computational grid by *compactifying* the radial coordinate, i.e.,
-redifining one's coordinates so that instead of working with $r\in[r_{\mathrm{worldtube}},\infty]$ one works with finite coordinates, say,
+redefining one's coordinates so that instead of working with $r\in[r_{\mathrm{worldtube}},\infty]$ one works with finite coordinates, say,
 $y\equiv1-\frac{2r_{\mathrm{worldtube}}}{r}\in[-1,1]$.
 
 <img align="right" src="/assets/images/CCE_cartoon.png" alt="drawing" width="200"/>
@@ -112,7 +112,7 @@ Above we saw that unlike what's commonly presented in the literature, gravitatio
 
 This phenomenon is known as the *gravitational wave memory effect* and corresponds to the fact that two freely-falling observers
 will experience a net displacement relative to each other due to a gravitational wave passing through the spacetime between them.
-This is illustrated through the gif shown on the right. While time progresses, the spacetime between the observers (the points) oscillates
+This is illustrated through the GIF shown on the right. While time progresses, the spacetime between the observers (the points) oscillates
 with the peaks and the troughs of the gravitational wave. But, since the gravitational wave does not decay to zero at late times
 (due to the memory effect) the observers remain permanently displaced relative to their initial circular configuration!
 While this effect has yet to be observed, we can resolve it in numerical relativity simulations. And, in the next five-ish years,
@@ -124,9 +124,9 @@ usual oscillatory contribution. So, in [arXiv:2007.11562](https://arxiv.org/abs/
 we showed exactly how to do this with numerical relativity simulations! It turns out that because memory is
 intimately related to the symmetries of asymptotic infinity
 (see [Gravitational wave coordinate freedoms: the BMS group](#gravitational-wave-coordinate-freedoms-the-bms-group))
-one can utilizes Noether's theorem to construct balance laws which naturally decompose the strain into a
+one can utilize Noether's theorem to construct balance laws which naturally decompose the strain into a
 component which looks like the usual oscillatory contribution and a component which looks like the step-like memory contribution.
-Consequently, understanding whether or not we've observed memory in a gravitatianal wave observation is trivial
+Consequently, understanding whether or not we've observed memory in a gravitational wave observation is trivial
 (provided that we can observe a binary black hole coalescence with a high enough signal-to-noise ratio!)
 
 ---
@@ -135,43 +135,52 @@ Consequently, understanding whether or not we've observed memory in a gravitatia
 
 In [Numerical Relativity](#numerical-relativity) we explained why it is much easier to study gravitational radiation from
 gravitational systems at future null infinity. In particular, the added structure of the boundary of asymptotically flat spacetimes
-makes it so that the coordinate freedoms one must control are not abitrary diffeomorphisms, but rather a more restricted set of symmetries.
+makes it so that the coordinate freedoms one must control are not arbitrary diffeomorphisms, but rather a more restricted set of symmetries.
 While one may naively expect the symmetries of future null infinity to simply be the 10 Poincar&eacute; symmetries---four spacetime translations,
 three Lorentz rotations, and three Lorentz boosts---it turns out that there is actually an infinite number of symmetries,
 which are contained in a particular extension of the Poincar&eacute; group known as the *BMS group*, named after
 Bondi, van der Burg, Metzner, and Sachs.
 
 These additional symmetries of the BMS group come from the fact that future null infinity is built from an infinite number of null generators:
-one for each point on the celestial two-sphere (mathematicall we have $I^{+}\cong\mathbb{R}\times S^{2}$). Physically, a way to think of this is the following.
-Imagine you have a group of observers watching some event, say a supernovae. If these observers know their relative positions, then they can change
+one for each point on the celestial two-sphere (mathematically we have $I^{+}\cong\mathbb{R}\times S^{2}$). Physically, a way to think of this is the following.
+Imagine you have a group of observers watching some event, say a supernova. If these observers know their relative positions, then they can change
 their personal clocks so that they all receive the same spherically-symmetric information at the same time. However, if you push these observers to
 asymptotic infinity, then they become causally disconnected from one another, so there is no way for them to synchronize their personal clocks to begin with,
 meaning these "direction-dependent" time translations, a.k.a., "supertranslations", are a symmetry of the system.
 
-Consequently, whenever one computes a gravitational wavefrom at future null infinity, it is subject to the infinite number of BMS freedoms,
+Consequently, whenever one computes a gravitational waveform at future null infinity, it is subject to the infinite number of BMS freedoms,
 which must be controlled in some well-defined manner! Across [arXiv:2105.02300](https://arxiv.org/abs/2105.02300) and [arXiv:2208.04356](https://arxiv.org/abs/2208.04356) (with a review in [arXiv:2405.08868](https://arxiv.org/abs/2405.08868)), we describe exactly how this can be done to compare NR waveforms from different resolutions,
-or NR waveform to other waveform approximants, like post-Newtonian waveforms! (see below!)
+or NR waveforms to other waveform approximants, like post-Newtonian waveforms! (see below!)
 
 ---
 
 ## Gravitational wave hybridizations
 
-In developement
+<img align="right" src="/assets/images/NR_PN_PT_black.png" alt="drawing" width="400"/>
+
+As may be obvious, running long NR simulations is challenging because they require more compute time. Furthermore, simulating binaries with
+large mass ratios, e.g., $q\gtrsim20$, is also challenging since a large number of spatial points are needed to capture the dynamics around the smaller body.
+So, if we want to build waveforms that span low frequencies and all mass ratios (both of which are desperately needed for many of the next-generation detectors!)
+we need some alternative to NR, or at least some way to *extend* NR to these regimes. This is where hybrids come in handy!
+
+For now we'll focus on how to extend NR waveforms to cover lower frequencies (the problem of building "hybrids" to extend to higher mass ratios is more a "hybrid"
+in the NR simulation, rather than a post-processing hybrid. See [arXiv:2410.22290](https://arxiv.org/abs/2410.22290) for more details!). As can be seen in the diagram
+to the upper right, while NR isn't really practical for binary separations $\gtrsim100M$, this is where post-Newtonian (PN) theory shines.
 
 ---
 
 ## Gravitational wave surrogate models
 
-In developement
+In development
 
 ---
 
 ## Binary black hole ringdowns
 
-In developement
+In development
 
 ---
 
 ## Active galactic nuclei (AGNs)
 
-In developement
+In development
