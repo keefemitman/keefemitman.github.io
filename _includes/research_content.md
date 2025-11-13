@@ -70,7 +70,8 @@ ds^{2}&=-du^{2}-2dudr+2r^{2}\gamma_{z\bar{z}}dzd\bar{z}\nonumber\\
 \end{align}
 $$
 
-where "c.c." stands for complex conjugation, $D_{z}$ is the covariant derivative with respect to the round metric on the two-sphere $\gamma_{z\bar{z}}$, $m_{B}$, $C_{zz}$, and $N_{z}$ are functions of $(u,z,\bar{z})$, and ellipsis represent subleading corrections. While "nice" may sound ironic after seeing the
+where "c.c." stands for complex conjugation, $D_{z}$ is the covariant derivative with respect to the round metric on the two-sphere $\gamma_{z\bar{z}}$,
+$m_{B}$, $C_{zz}$, and $N_{z}$ are functions of $(u,z,\bar{z})$, and ellipsis represent subleading corrections. While "nice" may sound ironic after seeing the
 equation for the metric, it really is nice because $C_{zz}$ is exactly the gravitational wave that we observe in our gravitational wave detectors!
 So if we want to compute the gravitational wave in our simulations, then we simply need to solve Einstein's equations in this Bondi-Sachs gauge.
 
@@ -149,7 +150,8 @@ asymptotic infinity, then they become causally disconnected from one another, so
 meaning these "direction-dependent" time translations, a.k.a., "supertranslations", are a symmetry of the system.
 
 Consequently, whenever one computes a gravitational waveform at future null infinity, it is subject to the infinite number of BMS freedoms,
-which must be controlled in some well-defined manner! Across [arXiv:2105.02300](https://arxiv.org/abs/2105.02300) and [arXiv:2208.04356](https://arxiv.org/abs/2208.04356) (with a review in [arXiv:2405.08868](https://arxiv.org/abs/2405.08868)), we describe exactly how this can be done to compare NR waveforms from different resolutions,
+which must be controlled in some well-defined manner! Across [arXiv:2105.02300](https://arxiv.org/abs/2105.02300) and [arXiv:2208.04356](https://arxiv.org/abs/2208.04356)
+(with a review in [arXiv:2405.08868](https://arxiv.org/abs/2405.08868)), we describe exactly how this can be done to compare NR waveforms from different resolutions,
 or NR waveforms to other waveform approximants, like post-Newtonian waveforms! (see below!)
 
 ---
@@ -163,9 +165,30 @@ large mass ratios, e.g., $q\gtrsim20$, is also challenging since a large number 
 So, if we want to build waveforms that span low frequencies and all mass ratios (both of which are desperately needed for many of the next-generation detectors!)
 we need some alternative to NR, or at least some way to *extend* NR to these regimes. This is where hybrids come in handy!
 
-For now we'll focus on how to extend NR waveforms to cover lower frequencies (the problem of building "hybrids" to extend to higher mass ratios is more a "hybrid"
-in the NR simulation, rather than a post-processing hybrid. See [arXiv:2410.22290](https://arxiv.org/abs/2410.22290) for more details!). As can be seen in the diagram
+For now we'll focus on how to extend NR waveforms to cover lower frequencies (the problem of building "hybrids" to extend to
+higher mass ratios is more a "hybrid"
+in the NR simulation, rather than a post-processing hybrid. See [arXiv:2410.22290](https://arxiv.org/abs/2410.22290) for more details!).
+As can be seen in the diagram
 to the upper right, while NR isn't really practical for binary separations $\gtrsim100M$, this is where post-Newtonian (PN) theory shines.
+
+Post-Newtonian theory works by assuming that the characteristic velocities of the bodies sourcing the radiated gravitational wave are slow compared to the
+speed of light, i.e., $(v/c)^2\sim GM/rc^2\ll1$. This assumption is useful because when one writes Einstein's equations in their "relaxed" form in harmonic gauge,
+i.e., $\square h^{\alpha\beta}=-16\pi(G/c^4)\tau^{\alpha\beta}$ for $\square\equiv-\partial^2/\partial (ct)^2+\nabla^2$ and
+$\tau^{\alpha\beta}$ the effective energy-momentum pseudotensor, one has $h^{\alpha\beta}(t,\mathbf{r})$ via:
+\begin{align}
+h^{\alpha\beta}(t,\mathbf{r})=\frac{4G}{c^4}\int\frac{\tau^{\alpha\beta}(t-|\mathbf{r}-\mathbf{r'}|/c,\mathbf{r'})}{|\mathbf{r}-\mathbf{r}'|}d^{3}r',
+\end{align}
+which readily yields the usual quadrupole formula for our slow motion limit (see Wald section 4.4)! Furthermore, one can push to higher orders in the perturbation expansion,
+i.e., higher orders in the small parameter $(v/c)^2$, to obtain more and more accurate predictions. Consequently, one can use PN to approximate the gravitational wave strain
+when the binary is well-seperated, and then switch to NR once the dynamics become more complex. However, there are a few caveats that arise when doing this "switch", i.e.,
+when constructing the PN-NR hybrid waveform.
+
+For one, PN predictions and NR waveforms are typically in completely different BMS frames (see [Gravitational wave coordinate freedoms: the BMS group](#gravitational-wave-coordinate-freedoms-the-bms-group))!
+So before a hybrid can be constructed, NR has to be mapped to the frame of PN, which we effectively solved in [arXiv:2105.02300](https://arxiv.org/abs/2105.02300) and [arXiv:2208.04356](https://arxiv.org/abs/2208.04356).
+A more annoying issue, however, is that the definition of the black hole progenitor parameters in PN and NR also need not be the same! In PN, the mass and spin are effectively defined in the infinite past.
+However, in NR, they are defined quasi-locally from each black holes apparent horizon; hence they mean something different than those of PN. To account for this, it turns out that one needs to optimize
+for the PN parameters that best match NR (while also optimizing over the BMS frame). In [arXiv:2403.10278](https://arxiv.org/abs/2403.10278) we explored this for the first time and found that performing
+both of these optimizations indeed yields ideal PN-NR hybrid waveforms.
 
 ---
 
