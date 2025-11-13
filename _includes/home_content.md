@@ -2,7 +2,7 @@
 
 I'm a [NASA Einstein Fellow](https://www.stsci.edu/stsci-research/fellowships/nasa-hubble-fellowship-program) at Cornell University
 studying the nature of gravity within our Universe.
-I'm also a member of the [LIGO Scientific Collaboration](https://ligo.org), the [LISA Consortium](https://www.lisamission.org/), and the [SXS Collaboration](https://www.black-holes.org).
+I'm also a member of the [LVK Collaboration](https://ligo.org), the [LISA Consortium](https://www.lisamission.org/), and the [SXS Collaboration](https://www.black-holes.org).
 
 
 But what do I do?
