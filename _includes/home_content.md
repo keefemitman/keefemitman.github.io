@@ -34,4 +34,4 @@ of putting Einstein's equations to the test.
 
 While there's too much that intrigues me to describe here,
 this is my main research interest. But for even more details,
-please check out my [research page](/research).
+please check out my [research page](/research) or even [this tutorial](https://github.com/keefemitman/SXSAndSurrogates/blob/main/Tutorial.ipynb) that I put together for the gravitational waves group at the Flatiron Institute's CCA!
