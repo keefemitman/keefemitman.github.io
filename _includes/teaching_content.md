@@ -5,5 +5,7 @@ Thus far in my academic career I have TA'd three courses:
 * Quantum Field Theory w/ Prof. Sergei Gukov at Caltech;
 * Complex Analysis w/ Prof. Hiroshi Oguri at Caltech.
 
-I have a number of recitation notes from these courses. I plan on uploading them here soon.
+If you would like to see my notes from these courses, please feel free to contact me.
+
+I have also mentored a number of masters, Ph.D., and AstroCom NYC students (see my CV for details).
 
