@@ -35,3 +35,5 @@ of putting Einstein's equations to the test.
 While there's too much that intrigues me to describe here,
 this is my main research interest. But for even more details,
 please check out my [research page](/research) or even [one of my research tutorials](https://github.com/keefemitman/ResearchTutorials/tree/main).
+
+Or check out my [outreach page](/outreach)!
