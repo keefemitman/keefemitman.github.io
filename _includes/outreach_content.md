@@ -3,6 +3,10 @@
 Besides conducting physics research, I also love talking about it and educating everyone about the beauty of science and discovery!
 Below you can find a few links to some outreach talks I've given (either at institutions or on Youtube channels) regarding my research:
 
+Eddington Lecture:
+
+(Coming March 2027!)
+
 Fraser Cain Youtube Channel:
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
