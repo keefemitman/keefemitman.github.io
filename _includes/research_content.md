@@ -305,4 +305,20 @@ Image Credit:
 
 ## Active galactic nuclei (AGNs)
 
-I've been working with the [McFACTS](https://github.com/mcfacts/mcfacts) team to integrate surrogate models into their code; look out for a paper and a description of the physics we learned soon!
+Apart from working on numerical relativity simulations and gravitational wave observations, I'm also interested in how binary black holes form in astrophysical environments!
+One promising candidate for producing binary black holes is active galactic nuclei (AGNs). In these systems, gas surrounding a supermassive black hole can help bring
+stellar-mass black holes together, while a deep gravitational potential can help retain the remnants that are formed so that more black holes can merge---
+a process known as *hierarchical merging*.
+
+But modeling this process requires knowing what is left behind after each merger!
+In [arXiv:2610.37895](https://arxiv.org/html/2610.37895v1), we combined the AGN population synthesis code [McFACTS](https://github.com/mcfacts/mcfacts) with post-Newtonian evolutions and
+a numerical relativity surrogate model to predict the remnant's mass, spin, and recoil velocity. This last quantity is the “kick” that the remnant receives because gravitational waves
+carry away linear momentum, and it helps determine whether the black hole remains available for subsequent mergers.
+Consequently, accurately modeling one merger is important for predicting the next!
+
+Compared to the simpler prescriptions previously used in [McFACTS](https://github.com/mcfacts/mcfacts), we found that the surrogate predicts
+more rapidly spinning, higher-generation remnants and a much broader range of kicks. Even so, the fraction of remnants that escape does not change substantially in the AGN populations
+that we studied, so hierarchical merging remains efficient. This provides another exciting application of the models discussed above: not only can they predict the gravitational waves
+that we observe, but they can also help us understand how repeated mergers build up populations of massive, rapidly spinning black holes!
+
+And this may even be relevant for gravitational-wave events that we're already seeing, like [GW231123](https://arxiv.org/abs/2507.08219)!
